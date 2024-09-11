@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="onboarding">#050505</color>
+    <color name="brown">#c67c4e</color>
+    <color name="beige">#edd6c8</color>
+    <color name="black">#313131</color>
+    <color name="white">#e3e3e3</color>
+    <color name="light_beige">#f9f2ed</color>
+    <color name="gray">#A2A2A2</color>
+</resources>

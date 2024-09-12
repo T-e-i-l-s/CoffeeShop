@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/onboarding">
+
+    <ImageView
+        android:id="@+id/onboarding_background_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/onboarding"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        android:paddingBottom="250dp"/>
+
+    <LinearLayout
+        android:id="@+id/onboarding_content_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="54dp">
+        <TextView
+            android:id="@+id/onboarding_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/onboarding_title"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:textAlignment="center"
+            android:fontFamily="@font/app_font"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="8dp"/>
+
+        <TextView
+            android:id="@+id/onboarding_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/onboarding_text"
+            android:textColor="@color/gray"
+            android:textSize="14sp"
+            android:textAlignment="center"
+            android:fontFamily="@font/app_font"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="32dp"/>
+
+        <Button
+            android:id="@+id/onboarding_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shape"
+            android:fontFamily="@font/app_font"
+            android:padding="16sp"
+            android:text="@string/onboarding_button_text"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+</RelativeLayout>

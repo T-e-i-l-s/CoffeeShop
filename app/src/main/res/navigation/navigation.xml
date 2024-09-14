@@ -3,9 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/navigation"
     app:startDestination="@id/onboardingScreenFragment">
-
     <fragment
         android:id="@+id/onboardingScreenFragment"
         android:name="com.mustafin.coffee.ui.screens.onboarding.OnboardingScreenFragment"
         android:label="OnboardingScreenFragment" />
+
+    <fragment
+        android:id="@+id/homeScreenFragment"
+        android:name="com.mustafin.coffee.ui.screens.home.HomeScreenFragment"
+        android:label="HomeScreenFragment" />
 </navigation>

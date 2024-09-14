@@ -10,6 +10,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.navigation.NavController;
+import androidx.navigation.fragment.NavHostFragment;
 
 import com.mustafin.coffee.R;
 
@@ -22,16 +24,17 @@ public class OnboardingScreenFragment extends Fragment {
             @Nullable ViewGroup container,
             @Nullable Bundle savedInstanceState
     ) {
+        NavController navController = NavHostFragment.findNavController(this);
+
         // View Model для этого фрагмента
         OnboardingViewModel viewModel = new ViewModelProvider(this).get(OnboardingViewModel.class);
+        viewModel.setNavController(navController);
 
         // Настраиваем UI
         View root = inflater.inflate(R.layout.onboarding_screen, container, false);
 
         Button acceptButton = root.findViewById(R.id.onboarding_button);
-        acceptButton.setOnClickListener(v -> {
-            viewModel.onContinue();
-        });
+        acceptButton.setOnClickListener(v -> viewModel.onContinue());
 
         return root;
     }

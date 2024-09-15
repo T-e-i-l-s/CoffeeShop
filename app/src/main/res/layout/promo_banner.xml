@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/promo_banner_shape"
+    android:clipToOutline="true"
+    tools:targetApi="s">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/banner_background"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:layout_gravity="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingVertical="13dp"
+        android:paddingHorizontal="24dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/app_font"
+            android:text="@string/promo"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:background="@drawable/promo_sticker_shape"
+            android:paddingHorizontal="6dp"
+            android:paddingVertical="4dp"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/app_font"
+            android:text="@string/promo_title"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:paddingEnd="75dp"
+            android:paddingStart="0dp"/>
+    </LinearLayout>
+</FrameLayout >

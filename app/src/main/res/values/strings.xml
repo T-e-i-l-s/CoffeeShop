@@ -9,4 +9,6 @@
     <!--  Home Screen  -->
     <string name="location">Location</string>
     <string name="search_bar_placeholder">Search coffee</string>
+    <string name="promo">promo</string>
+    <string name="promo_title">Buy one get one FREE</string>
 </resources>

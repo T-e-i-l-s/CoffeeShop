@@ -12,6 +12,7 @@
     <color name="brown">#c67c4e</color>
     <color name="beige">#edd6c8</color>
     <color name="light_beige">#f9f2ed</color>
+    <color name="red">#ED5151</color>
 
     <!--  Onboarding  -->
     <color name="onboarding_background">#050505</color>

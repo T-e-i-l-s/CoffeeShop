@@ -1,10 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="onboarding">#050505</color>
+    <!--  Background  -->
+    <color name="background">#F9F9F9</color>
+    <color name="secondary_background">#FFFFFF</color>
+    <!--  Content  -->
+    <color name="black">#242424</color>
+    <color name="dark_gray">#313131</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#A2A2A2</color>
+    <!--  Additional  -->
     <color name="brown">#c67c4e</color>
     <color name="beige">#edd6c8</color>
-    <color name="black">#313131</color>
-    <color name="white">#e3e3e3</color>
     <color name="light_beige">#f9f2ed</color>
-    <color name="gray">#A2A2A2</color>
+
+    <!--  Onboarding  -->
+    <color name="onboarding_background">#050505</color>
+
+    <!--  Home Screen  -->
+    <color name="home_header_gradient_start">#313131</color>
+    <color name="home_header_gradient_end">#111111</color>
+    <color name="search_bar">#2A2A2A</color>
 </resources>

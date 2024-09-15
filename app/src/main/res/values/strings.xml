@@ -5,4 +5,8 @@
     <string name="onboarding_title">Fall in Love with Coffee in Blissful Delight!</string>
     <string name="onboarding_text">Welcome to our cozy coffee corner, where every cup is a delightful for you.</string>
     <string name="onboarding_button_text">Get Started</string>
+
+    <!--  Home Screen  -->
+    <string name="location">Location</string>
+    <string name="search_bar_placeholder">Search coffee</string>
 </resources>

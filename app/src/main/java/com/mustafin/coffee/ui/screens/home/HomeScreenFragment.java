@@ -10,8 +10,18 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.mustafin.coffee.R;
+import com.mustafin.coffee.domain.models.ShortCoffeeModel;
+
+import java.util.List;
 
 public class HomeScreenFragment extends Fragment {
+    List<ShortCoffeeModel> coffeeList = List.of(
+            new ShortCoffeeModel("Caffe Mocha", "Deep Foam", 4.53),
+            new ShortCoffeeModel("Flat White", "Espresso", 3.53),
+            new ShortCoffeeModel("Caffe Mocha", "Deep Foam", 4.53),
+            new ShortCoffeeModel("Flat White", "Espresso", 3.53)
+            );
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {

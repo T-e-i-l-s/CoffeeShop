@@ -23,6 +23,14 @@ public class HomeScreenFragment extends Fragment {
             new ShortCoffeeModel("Caffe Mocha", "Deep Foam", 4.53),
             new ShortCoffeeModel("Flat White", "Espresso", 3.53),
             new ShortCoffeeModel("Caffe Mocha", "Deep Foam", 4.53),
+            new ShortCoffeeModel("Flat White", "Espresso", 3.53),
+            new ShortCoffeeModel("Caffe Mocha", "Deep Foam", 4.53),
+            new ShortCoffeeModel("Flat White", "Espresso", 3.53),
+            new ShortCoffeeModel("Caffe Mocha", "Deep Foam", 4.53),
+            new ShortCoffeeModel("Flat White", "Espresso", 3.53),
+            new ShortCoffeeModel("Caffe Mocha", "Deep Foam", 4.53),
+            new ShortCoffeeModel("Flat White", "Espresso", 3.53),
+            new ShortCoffeeModel("Caffe Mocha", "Deep Foam", 4.53),
             new ShortCoffeeModel("Flat White", "Espresso", 3.53)
             );
 
@@ -34,6 +42,8 @@ public class HomeScreenFragment extends Fragment {
         RecyclerView coffeeListView = root.findViewById(R.id.coffee_recycler_view);
         coffeeListView.setAdapter(new CoffeeListAdapter(coffeeList));
         coffeeListView.setLayoutManager(new GridLayoutManager(getContext(), 2));
+        int spaceWidthInPx = (int)(16 * this.getResources().getDisplayMetrics().density);
+        coffeeListView.addItemDecoration(new CoffeeListDecoration(spaceWidthInPx));
 
         return root;
     }

@@ -22,10 +22,10 @@ public class CoffeeListDecoration extends RecyclerView.ItemDecoration {
     ) {
         outRect.left = space/2;
         outRect.right = space/2;
-        outRect.top = space;
+        outRect.bottom = space;
 
         if (parent.getChildLayoutPosition(view) == 0 || parent.getChildLayoutPosition(view) == 1) {
-            outRect.bottom = space;
+            outRect.top = space;
         } else {
             outRect.top = 0;
         }

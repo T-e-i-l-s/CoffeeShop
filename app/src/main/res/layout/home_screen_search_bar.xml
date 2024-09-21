@@ -35,10 +35,12 @@
             android:background="@null"
             android:fontFamily="@font/app_font"
             android:inputType="text"
-            android:text="@string/search_bar_placeholder"
-            android:textColor="@color/gray"
+            android:hint="@string/search_bar_placeholder"
+            android:textColorHint="@color/gray"
+            android:textColor="@color/white"
+            android:textCursorDrawable="@drawable/text_cursor"
             android:textSize="14sp"
-            tools:ignore="LabelFor" />
+            tools:ignore="LabelFor"/>
     </LinearLayout>
 
     <ImageView

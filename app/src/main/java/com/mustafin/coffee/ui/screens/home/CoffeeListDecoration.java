@@ -36,7 +36,7 @@ public class CoffeeListDecoration extends RecyclerView.ItemDecoration {
         }
 
         if (childPosition == itemCount - 1 || childPosition == itemCount - 2) {
-            outRect.bottom = getNavigationBarHeight(view);
+            outRect.bottom = space + getNavigationBarHeight(view);
         } else {
             outRect.bottom = space;
         }

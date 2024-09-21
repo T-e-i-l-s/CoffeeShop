@@ -6,7 +6,13 @@
     <fragment
         android:id="@+id/onboardingScreenFragment"
         android:name="com.mustafin.coffee.ui.screens.onboarding.OnboardingScreenFragment"
-        android:label="OnboardingScreenFragment" />
+        android:label="OnboardingScreenFragment">
+        <action
+            android:id="@+id/action_onboardingScreenFragment_to_homeScreenFragment"
+            app:destination="@id/homeScreenFragment"
+            app:exitAnim="@anim/slide_exit"
+            app:popExitAnim="@anim/slide_exit"/>
+    </fragment>
 
     <fragment
         android:id="@+id/homeScreenFragment"

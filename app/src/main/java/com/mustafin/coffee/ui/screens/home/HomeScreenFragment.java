@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -42,8 +43,8 @@ public class HomeScreenFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.home_screen, container, false);
 
-        LinearLayout header = root.findViewById(R.id.home_header);
-        ViewCompat.setOnApplyWindowInsetsListener(header, (view, insets) -> {
+        LinearLayout homeContainer = root.findViewById(R.id.home_container);
+        ViewCompat.setOnApplyWindowInsetsListener(homeContainer, (view, insets) -> {
             int statusBarInset = insets.getInsets(WindowInsetsCompat.Type.statusBars()).top;
             view.setPadding(
                     view.getPaddingLeft(),
@@ -54,6 +55,22 @@ public class HomeScreenFragment extends Fragment {
             return insets;
         });
 
+        View promoBanner = root.findViewById(R.id.home_promo_banner);
+        promoBanner.getViewTreeObserver().addOnGlobalLayoutListener(() -> {
+            // Высчитываем высоту черного header
+            // Получаем положение рекланого банера
+            int[] location = new int[2];
+            promoBanner.getLocationOnScreen(location);
+            // Получаем высоту рекланого банера
+            int promoBannerHeight = promoBanner.getHeight();
+
+            // Задаем высоту черному header
+            RelativeLayout header = root.findViewById(R.id.home_header);
+            header.getLayoutParams().height = location[1] + promoBannerHeight/2;
+            header.requestLayout();
+        });
+
+        // Настраиваем список кофе
         RecyclerView coffeeListView = root.findViewById(R.id.coffee_recycler_view);
         coffeeListView.setAdapter(new CoffeeListAdapter(coffeeList));
         coffeeListView.setLayoutManager(new GridLayoutManager(getContext(), 2));

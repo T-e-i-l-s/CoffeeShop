@@ -17,9 +17,6 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.mustafin.coffee.R;
-import com.mustafin.coffee.domain.models.ShortCoffeeModel;
-
-import java.util.List;
 
 // Фрагмент главного экрана
 public class HomeScreenFragment extends Fragment {

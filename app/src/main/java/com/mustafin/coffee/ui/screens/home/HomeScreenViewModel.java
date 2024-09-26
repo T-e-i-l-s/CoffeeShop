@@ -2,23 +2,24 @@ package com.mustafin.coffee.ui.screens.home;
 
 import androidx.lifecycle.ViewModel;
 
-import com.mustafin.coffee.domain.models.ShortCoffeeModel;
+import com.mustafin.coffee.domain.models.HomeScreenCoffeeModel;
 
 import java.util.List;
 
 public class HomeScreenViewModel extends ViewModel {
-    List<ShortCoffeeModel> coffeeList = List.of(
-            new ShortCoffeeModel("Caffe Mocha", "Deep Foam", 4.53),
-            new ShortCoffeeModel("Flat White", "Espresso", 3.53),
-            new ShortCoffeeModel("Caffe Mocha", "Deep Foam", 4.53),
-            new ShortCoffeeModel("Flat White", "Espresso", 3.53),
-            new ShortCoffeeModel("Caffe Mocha", "Deep Foam", 4.53),
-            new ShortCoffeeModel("Flat White", "Espresso", 3.53),
-            new ShortCoffeeModel("Caffe Mocha", "Deep Foam", 4.53),
-            new ShortCoffeeModel("Flat White", "Espresso", 3.53),
-            new ShortCoffeeModel("Caffe Mocha", "Deep Foam", 4.53),
-            new ShortCoffeeModel("Flat White", "Espresso", 3.53),
-            new ShortCoffeeModel("Caffe Mocha", "Deep Foam", 4.53),
-            new ShortCoffeeModel("Flat White", "Espresso", 3.53)
+    // TODO: Написать логику
+    List<HomeScreenCoffeeModel> coffeeList = List.of(
+            new HomeScreenCoffeeModel("Caffe Mocha", "Deep Foam", 4.53, false),
+            new HomeScreenCoffeeModel("Flat White", "Espresso", 3.53, false),
+            new HomeScreenCoffeeModel("Caffe Mocha", "Deep Foam", 4.53, false),
+            new HomeScreenCoffeeModel("Flat White", "Espresso", 3.53, false),
+            new HomeScreenCoffeeModel("Caffe Mocha", "Deep Foam", 4.53, false),
+            new HomeScreenCoffeeModel("Flat White", "Espresso", 3.53, false),
+            new HomeScreenCoffeeModel("Caffe Mocha", "Deep Foam", 4.53, false),
+            new HomeScreenCoffeeModel("Flat White", "Espresso", 3.53, false),
+            new HomeScreenCoffeeModel("Caffe Mocha", "Deep Foam", 4.53, false),
+            new HomeScreenCoffeeModel("Flat White", "Espresso", 3.53, false),
+            new HomeScreenCoffeeModel("Caffe Mocha", "Deep Foam", 4.53, false),
+            new HomeScreenCoffeeModel("Flat White", "Espresso", 3.53, false)
     );
 }
